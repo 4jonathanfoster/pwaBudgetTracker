@@ -15,7 +15,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect(
+ // "mongodb://localhost/budget"
+ 'mongodb+srv://Texas9:Texas9@cluster0.exnkd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+  , {
   useNewUrlParser: true,
   useFindAndModify: false
 });
